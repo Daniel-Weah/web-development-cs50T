@@ -159,7 +159,7 @@
     padding-bottom: 1.5rem;
 }
 .intro-text p{
-    padding-bottom: 1.5rem;
+    padding-bottom: 4rem;
     color: #666;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -171,19 +171,18 @@
 
   .hero-intro-2{
     position: relative; 
-    background-image: url('<svg width="1014" height="1018" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1 0 0 -1 0 1018)" fill="none" fill-rule="evenodd"><rect fill="#3E4062" x="213" y="214" width="588" height="590" rx="294"/><rect stroke="#878D92" opacity=".5" x=".5" y=".5" width="1013" height="1017" rx="506.5"/><rect stroke="#878D92" x="170.5" y="171.5" width="673" height="675" rx="336.5"/></g></svg>');
+    background-image: url('images/bg-pattern-intro-desktop.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(33, 1, 86);
-    
-    padding-top: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
     text-align: center;
-    padding-bottom: 10%;
     z-index: 0; 
     overflow: hidden; 
+    height: 50vh;
+    position: absolute;
 }
 
 .hero-intro-2::before {
@@ -201,3 +200,94 @@
     position: relative;
     z-index: 2; 
 }
+
+.hero-intro-2 .details{
+    padding: 5rem;
+    margin-left: 30pc;
+    color: #fff;
+}
+.hero-intro-2 .details h1{
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 2pc;
+}
+.hero-intro-2 .details p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    color: #c9c8c8;
+}
+#image_img{
+   position: relative;
+   z-index: 999;
+   margin-top: -10%;
+}
+
+.hero-intro-3 .details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero-intro-3 .details img{
+    width: 50%;
+    margin-top: 3pc;
+    margin-right: -5pc;
+}
+
+.hero-intro-3 .special_details{
+    padding: 5rem;
+    align-items: center;
+}
+.hero-intro-3 .special_details h1{
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(23, 23, 62);
+    padding-bottom: 1.5rem;
+}
+.hero-intro-3 .special_details p{
+    padding-bottom: 4rem;
+    color: #666;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    padding-right: 6pc;
+    text-align: justify;
+  }
+
+
+  footer{
+    background-color: rgb(15, 2, 35);
+    border-top-right-radius: 100px;
+    padding: 1rem;
+  }
+  .footer-details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  .footer-details  .link{
+      font-family: 'Ubuntu', sans-serif;
+    padding: 2rem;
+  }
+  .footer-details .link ul li{
+    list-style: none;
+    line-height: 35px;
+    color: #acaaaa;
+    cursor: pointer;
+  }
+  .footer-details .link h4{
+    padding-bottom: 2pc;
+  }
+  #company{
+    margin-top: -35px;
+  }
+  #contact{
+    margin-top: -4.2pc;
+  }
+
+  #footer_logo{
+    margin-top: -13pc;
+    cursor: pointer;
+  }

@@ -16,7 +16,6 @@
     background-position: left center; 
     background-repeat: no-repeat;
     background-color: rgb(246, 119, 73);
-    
     padding-top: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
@@ -71,6 +70,9 @@
     justify-content: space-between;
     padding: 0.5rem;
     cursor: pointer;
+  }
+  .nav-btn{
+    margin-left: 35pc;
   }
   .nav-btn button:nth-child(1){
    background-color: transparent;
@@ -302,14 +304,105 @@
 
   /* Media Queries */
 
-  
+  #close-menu {
+    display: none;
+  }
 
-  
+  @media  (max-width: 1280px){
+    .nav-btn{
+        margin-left: 20pc;
+      }
+  }
+  @media  (max-width: 1024px){
+    .nav-btn{
+        margin-left: 10pc;
+      }
+  }
+
   @media (max-width: 768px) {
-   
-    .navitem-logo ul {
-      gap: 5px;
-    }
+
+#menu-bar {
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 0.3rem;
+    right: 1;
+    margin-left: 35pc;
+    cursor: pointer;
+}
+#logo{
+    margin-left: -4pc;
+
+}
+
+#close-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    display: none; 
+    z-index: 1100; 
+}
+
+#nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #050404;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 2rem 0;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+#nav-menu.active {
+    right: 0;
+}
+
+#nav-menu.active #close-menu {
+    display: block;
+}
+
+#nav-menu li {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+}
+
+.nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.nav-btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.nav-btn button:hover {
+    background-color: #0056b3;
+}
+
+    
   .hero-header{
     padding: 0;
   }
@@ -337,25 +430,7 @@
       height: 3rem;
     }
   
-    #menu-bar {
-      display: block;
-      font-size: 2rem;
-      color: white;
-      position: absolute;
-      top: 0.3rem;
-      right: 1rem;
-    }
-  
-    .navitem-logo ul li{
-      display: none;
-    }
-    .nav-btn{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
-
+   
     .hero-intro{
         padding: 2rem;
         align-items: center;
@@ -532,8 +607,15 @@
 
   @media (max-width: 600px) {
    
-    .navitem-logo ul {
-      gap: 5px;
+    #menu-bar {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+        position: absolute;
+        top: 0.3rem;
+        right: 1;
+        margin-left: 14pc;
+        cursor: pointer;
     }
   
     .hero-header h1 {
@@ -561,24 +643,6 @@
       height: 3rem;
     }
   
-    #menu-bar {
-      display: block;
-      font-size: 2rem;
-      color: white;
-      position: absolute;
-      top: 0.3rem;
-      right: 1rem;
-    }
-  
-    .navitem-logo ul li{
-      display: none;
-    }
-    .nav-btn{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
 
     .hero-intro{
         padding: 2rem;
@@ -751,6 +815,18 @@
         cursor: pointer;
       }
   }
+  @media (max-width: 425px) {
+    #menu-bar {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+        position: absolute;
+        top: 0.3rem;
+        right: 1;
+        margin-left: 13pc;
+        cursor: pointer;
+    }
+}
   @media (max-width: 320px) {
     .hero-intro-2 .details h1{
         font-family: 'Ubuntu', sans-serif;
@@ -763,4 +839,14 @@
         margin-top: 12pc;
         margin-left: -3pc;
     }
-  }
+    #menu-bar {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+        position: absolute;
+        top: 0.3rem;
+        right: 1;
+        margin-left: 11pc;
+        cursor: pointer;
+    }
+}

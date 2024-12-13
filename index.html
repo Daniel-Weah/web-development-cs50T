@@ -12,31 +12,32 @@
     <main>
         <div class="header">
             <div class="top-nav">
-              <div class="navitem-logo">
-                <img src="images/logo.svg" alt="logo">
-                <ul>
-                  <li>Product <i class="fa-solid fa-angle-down"></i></li>
-                  <li>Company <i class="fa-solid fa-angle-down"></i></li>
-                  <li>Contact <i class="fa-solid fa-angle-down"></i></li>
-                </ul>
-              </div>
-              <div class="nav-btn">
-                <button>Login</button>
-                <button>Sign Up</button>
+                <div class="navitem-logo">
+                    <img src="images/logo.svg" alt="logo" id="logo">
+                    <ul id="nav-menu">
+                        <li>Product <i class="fa-solid fa-angle-down"></i></li>
+                        <li>Company <i class="fa-solid fa-angle-down"></i></li>
+                        <li>Contact <i class="fa-solid fa-angle-down"></i></li>
+                        <div class="nav-btn">
+                            <button>Login</button>
+                            <button>Sign Up</button>
+                        </div>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" id="menu-bar"></i>
             </div>
-            <i class="fa-solid fa-bars" id="menu-bar"></i>
-            </div>
-          
+        
             <div class="hero-header">
-              <h1>A modern publishing platform</h1>
-              <p>Grow your audience and build your online brand</p>
-          
-              <div class="button">
-                <button>Start for Free</button>
-                <button>Learn More</button>
-              </div>
+                <h1>A modern publishing platform</h1>
+                <p>Grow your audience and build your online brand</p>
+                <div class="button">
+                    <button>Start for Free</button>
+                    <button>Learn More</button>
+                </div>
             </div>
-          </div>
+        </div>
+        
+        
           
 
       <div class="hero-intro">
@@ -162,5 +163,24 @@
         </div>
       </footer>
     </main>
+
+    <script>
+        const menuBar = document.getElementById('menu-bar');
+        const navMenu = document.getElementById('nav-menu');
+        const closeMenu = document.createElement('i');
+    
+        closeMenu.className = "fa-solid fa-times";
+        closeMenu.id = "close-menu";
+        navMenu.appendChild(closeMenu);
+    
+        menuBar.addEventListener('click', () => {
+            navMenu.classList.add('active');
+        });
+    
+        closeMenu.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    </script>
+    
   </body>
 </html>

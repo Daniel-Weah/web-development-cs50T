@@ -231,10 +231,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 10pc;
 }
 .hero-intro-3 .details img{
     width: 50%;
-    margin-top: 3pc;
     margin-right: -5pc;
 }
 

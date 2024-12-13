@@ -301,31 +301,7 @@
 }
 
   /* Media Queries */
-@media (max-width: 1024px) {
-    .header {
-      padding: 2rem;
-      text-align: center;
-    }
-  
-    .navitem-logo {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navitem-logo ul {
-      flex-direction: column;
-      gap: 10px;
-      margin: 0;
-    }
-  
-    .hero-header h1 {
-      font-size: 2.5rem;
-    }
-  
-    .hero-header p {
-      font-size: 1rem;
-    }
-  }
+
   
 
   

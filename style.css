@@ -169,19 +169,19 @@
   }
 
 
-  .hero-intro-2{
+  .hero-intro-2 {
     position: relative; 
-    background-image: url('images/bg-pattern-intro-desktop.svg');
-    background-size: cover;
-    background-position: center;
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='1014' height='1018'><g transform='matrix(1 0 0 -1 0 1018)' fill='none' fill-rule='evenodd'><rect fill='%233E4062' x='213' y='214' width='588' height='590' rx='294'/><rect stroke='%23878D92' opacity='.5' x='.5' y='.5' width='1013' height='1017' rx='506.5'/><rect stroke='%23878D92' x='170.5' y='171.5' width='673' height='675' rx='336.5'/></g></svg>");
+    background-size: 50%;
+    background-position: left center; 
     background-repeat: no-repeat;
-    background-color: rgb(33, 1, 86);
+    background-color: rgb(33, 12, 63); 
     border-bottom-left-radius: 100px;
     border-top-right-radius: 100px;
     text-align: center;
     z-index: 0; 
     overflow: hidden; 
-    height: 50vh;
+    height: 50vh; 
     position: absolute;
 }
 
@@ -192,14 +192,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(15, 2, 35);
     z-index: 1; 
+    background-color: transparent; 
 }
 
 .hero-intro-2 > * {
     position: relative;
     z-index: 2; 
 }
+
 
 .hero-intro-2 .details{
     padding: 5rem;
